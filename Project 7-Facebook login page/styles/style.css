@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F2F5;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side{
+    width: 45%;
+    margin-bottom: 200px;
+}
+
+.left-side h1{
+    color: #1877F2;
+    font-weight: 700;
+    font-size: 60px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+.left-side p{
+    color: #1C1E21;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.right-side{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 410px;
+    height: 370px;
+    box-shadow: -10px -10px 15px rgba(0,0,0,0.1),10px 10px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+}
+
+input{
+    width: 355px;
+    height: 48px;
+    border-radius: 6px;
+    margin: 10px 0;
+    padding: 0 10px;
+    outline: none;
+    border: 2px solid rgb(227, 227, 227);
+}
+.btn1 button{
+    width: 380px;
+    height: 48px;
+    margin: 0 0 10px 0;
+    background-color: #166FE5;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 19px;
+    border: none;
+}
+
+.margin{
+    margin-top: 10px;
+}
+
+hr{
+    width: 300px;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+a{
+    text-decoration: none;
+    color: #1877F2;
+}
+
+.bold{
+    margin-top: 30px;
+}
+
+.bold a{
+    font-weight: 600;
+    font-size: medium;
+    color: black;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+.btn2 button{
+    width: 250px;
+    height: 48px;
+    color: white;
+    background-color: #36A420;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 19px;
+    border: none;
+}
