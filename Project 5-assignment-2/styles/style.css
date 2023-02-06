@@ -36,8 +36,10 @@ nav ul li{
     font-weight: 500;
     
 }
+
 nav ul li:hover {
     color: #5955b3;
+    font-size: 20px;
 }
 
 .btn1 button{
