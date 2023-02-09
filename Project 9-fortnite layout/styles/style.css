@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(#f9d349,20%, #d57e12);
+    overflow-x: hidden;
+}
+
+.max-width{
+    width: 1200px;
+    max-width: 95%;
+    margin: 0 auto;
+
+}
+
+header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    padding-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid white;
+}
+
+.nav-btn button{
+    background: transparent;
+    color: white;
+    border: 1px solid #f5dca8;
+    border-radius: 30px;
+    padding: 5px 20px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+.nav-btn button:hover{
+    background-color: white;
+    color: black;
+    transition: .4s;
+}
+
+.content{
+    padding-top: 100px;
+}
+
+.content .main-text{
+    margin-bottom: 50px;
+}
+
+.content .main-text h6{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.content .main-text h1{
+    font-size: 80px;
+    color: white;
+    line-height: 1;
+    margin: 0 0 45px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.content .main-text h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.content .main-text p{
+    width: 480px;
+    color: white;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.content .main-text a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    padding: 6px 20px;
+    border-radius: 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.content .main-text a:hover{
+    transform: scale(1.2);
+    border: 1px solid #f5dca8;
+    background: transparent;
+    color: white;
+    transition: .4s;
+}
+
+.content .main-text a.play{
+    border: 1px solid #f5dca8;
+    background: transparent;
+    color: white;
+    margin-left: 20px;
+}
+
+.content .main-text a.play i{
+    margin-right: 7px;
+}
+
+.content .main-text a.play:hover{
+    color: black;
+    background: white;
+    border: 1px solid white;
+    transition: .4s;
+}
+
+.content .social{
+    margin-top: 100px;
+}
+
+.content .social a{
+    display: inline-block;
+    color: #f5dcac;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.content .social a:hover{
+    transform: scale(1.2);
+    color: white;
+    transition: .4s;
+}
+
+.image img{
+    position: absolute;
+    width: 800px;
+    height: 85%;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+}
