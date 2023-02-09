@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(213, 213, 213);
+    color: rgb(82, 82, 82);
+}
+
+.container{
+    height: 450px;
+    width: 350px;
+    /* border: 2px solid black; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+    background-color: rgb(236, 236, 236);
+    border-radius: 15px;
+    /* box-shadow: 0 0 5px black; */
+    box-shadow: 5px 5px 5px rgb(102, 102, 102),-5px -5px 5px rgb(255, 255, 255);
+}
+
+ img{
+    width: 140px;
+    height: 140px;
+    border-radius: 54%;
+    border: 5px solid rgb(218, 218, 218);
+    box-shadow: 2px 2px 2px rgb(102, 102, 102),-2px -2px 2px rgb(255, 255, 255);
+}
+
+.topsection{
+    width: 100%;
+    padding: 20px 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.social{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social i{
+    font-size: 20px;
+    margin: 10px 10px;
+}
+
+.circle{
+    background-color: rgb(236, 236, 236);
+    margin: 0 10px;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px rgb(102, 102, 102),-2px -2px 2px rgb(255, 255, 255);
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.btn button{
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(82, 82, 82);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(102, 102, 102),-2px -2px 2px rgb(255, 255, 255);
+
+}
+.profilename{
+    font-weight: 600;
+    line-height: 1.4;
+    color: black;
+    margin-top: 10px;
+}
+
+.profiledetail{
+    font-weight: 500;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.social .circle #blue{
+    color: blue;
+}
+
+.social .circle #skyblue{
+    color: rgb(0, 174, 255);
+}
+
+.social .circle #pink{
+    color: rgb(255, 0, 191);
+}
+
+.social .circle #red{
+    color: red;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23px;
+}
+
+.content p{
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.like{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 0 10px;
+    border-right: 2px solid gray;
+    color: gray;
+}
+
+.comment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border-right: 2px solid gray;
+    color: gray;
+}
+
+.share{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    color: gray;
+}
