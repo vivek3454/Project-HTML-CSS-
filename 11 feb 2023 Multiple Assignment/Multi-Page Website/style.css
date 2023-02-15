@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,13 +6,13 @@
     font-family: "IBM Plex Sans", sans-serif;
 }
 
-body{
+body {
     background-color: #f0f4f5;
     max-width: 1300px;
     margin: auto;
 }
 
-nav{
+nav {
     height: 15vh;
     display: flex;
     align-items: center;
@@ -20,17 +20,17 @@ nav{
     padding: 0 4%;
 }
 
-nav img{
+nav img {
     width: 160px;
     cursor: pointer;
 }
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
     margin-right: 50px;
     font-weight: 600;
@@ -41,48 +41,48 @@ nav ul li:first-child a {
     color: #20bc7e;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: black;
 }
 
-main{
+main {
     height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-main section{
+main section {
     width: 50%;
 }
 
-.left-side{
+.left-side {
     position: relative;
     margin: 0 4%;
 }
 
-.topangle{
+.topangle {
     width: 25px;
 }
 
-.left-side h1{
+.left-side h1 {
     font-size: 60px;
 }
 
-.left-side p{
+.left-side p {
     color: #7c7c7c;
     font-size: 16px;
     margin: 20px 0;
 }
 
-.bottomAngle{
+.bottomAngle {
     width: 25px;
     position: absolute;
     right: 25px;
 }
 
-.stethoscope{
+.stethoscope {
     width: 90%;
     position: absolute;
     right: -30%;
@@ -90,13 +90,13 @@ main section{
     z-index: -1;
 }
 
-.mouse{
+.mouse {
     position: absolute;
     right: -30px;
     bottom: -50px;
 }
 
-.left-side button{
+.left-side button {
     padding: 10px 20px;
     background-color: #20bc7e;
     color: white;
@@ -107,31 +107,190 @@ main section{
     cursor: pointer;
 }
 
-.left-side button:hover{
+.left-side button:hover {
     color: #20bc7e;
     background-color: white;
     border: 2px solid #20bc7e;
     transition: .4s;
 }
 
-.greenBox,.yellowBox{
+.greenBox,
+.yellowBox {
     position: absolute;
     right: 0;
 }
 
-.greenBox{
+.greenBox {
     width: 30%;
     bottom: 30px;
 }
 
-.yellowBox{
+.yellowBox {
     width: 25%;
     bottom: 30px;
 }
 
-.doctor{
+.doctor {
     height: 91%;
     position: absolute;
     bottom: 0px;
     right: 0px;
+}
+
+@media screen and (max-width: 1022px){
+    .stethoscope {
+        width: 400px;
+        position: absolute;
+        right: -30%;
+        top: 50px;
+        z-index: -1;
+    }
+
+    .mouse {
+        position: relative;
+        right: -290px;
+        bottom: 7px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .stethoscope {
+        width: 300px;
+        position: absolute;
+        right: -30%;
+        top: 90px;
+        z-index: -1;
+    }
+
+    .mouse {
+        position: relative;
+        right: -200px;
+        bottom: 7px;
+    }
+    .greenBox {
+        width: 37%;
+        bottom: 30px;
+    }
+    
+    .yellowBox {
+        width: 30%;
+    }
+    
+    .doctor {
+        height: 81%;
+    }
+}
+
+@media screen and (max-width:786px) {
+    .left-side h1 {
+        font-size: 30px;
+    }
+
+    .left-side p {
+        font-size: 12px;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width:643px) {
+    .left-side button {
+        padding: 7px 18px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .stethoscope {
+        width: 350px;
+        position: absolute;
+        right: -30%;
+        top: 0;
+        z-index: -1;
+    }
+
+    .mouse {
+        position: absolute;
+        right: -30px;
+        bottom: -10px;
+    }
+
+    .greenBox {
+        width: 40%;
+        bottom: 30px;
+    }
+
+    .yellowBox {
+        width: 35%;
+        bottom: 30px;
+    }
+
+    .doctor {
+        height: 71%;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+@media screen and (max-width:497px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        margin-left: 10px;
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 10px;
+        margin-right: 10px;
+        font-weight: 500;
+        font-size: 13px;
+
+    }
+
+    nav img {
+        width: 100px;
+    }
+
+    nav ul li:nth-child(2) a {
+        font-weight: 600;
+        color: #20bc7e;
+    }
+
+    .topangle {
+        position: absolute;
+        left: -20px;
+    }
+
+    .bottomAngle {
+        position: absolute;
+        right: 50px;
+    }
+
+    .doctor{
+        z-index: -1;
+    }
+    .greenBox {
+        width: 60%;
+        z-index: -1;
+    }
+
+    .yellowBox {
+        z-index: -1;
+        width: 50%;
+    }
+
+    main .left-side {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .left-side {
+        margin: 0 6px;
+    }
+
 }

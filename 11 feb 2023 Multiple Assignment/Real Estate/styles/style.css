@@ -7,10 +7,12 @@
 
 body{
     background-color: #f6f8fa;
+    max-width: 100%;
 }
 
 header{
     height: 125vh;
+    max-width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/Photos/mainBackground.png);
     background-repeat: no-repeat;
     background-position: center;

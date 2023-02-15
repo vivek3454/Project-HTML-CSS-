@@ -8,6 +8,11 @@
     font-family: "Poppins", sans-serif;
 }
 
+.main-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 body{
     margin: 0 15vw;
 }
@@ -20,6 +25,14 @@ nav{
     justify-content: space-between;
     padding: 30px 0;
     width: 100%;
+}
+
+.menu i{
+    color: white;
+}
+
+.menu {
+    display: none;
 }
 
 .nav-right{
@@ -62,6 +75,7 @@ main{
     align-items: flex-start;
     margin-top: 30px;
     position: relative;
+    max-width: 100%;
 }
 
 img[alt="mainImage"]{
@@ -130,6 +144,7 @@ img[alt="shoppingBag"]{
     position: relative;
     top: -40px;
     margin-bottom: 40px;
+    max-width: 100%;
 }
 
 .social img{
@@ -148,8 +163,17 @@ img[alt="specsLogo"]{
 
 /* specs section */
 
+.specs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
 .specs-list{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .specs-list div{
@@ -198,7 +222,7 @@ img[alt="specsImage"]{
 }
 
 .case-item img{
-    scale: 0.9;
+    scale: 0.8;
     margin-right: 20px;
 }
 
@@ -318,6 +342,7 @@ img[alt="productLogo"]{
     display: flex;
     justify-content: space-between;
     padding: 10px 13px;
+    align-items: flex-end;
 }
 
 .product-info p{
@@ -411,4 +436,32 @@ img[alt="upArrow"]{
     position: absolute;
     right: -190px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1140px) {
+    .menu{
+        display: block;
+    }
+    .nav-right{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .right-main{
+        margin-left: 100px;
+    }
+
+    img[alt="upArrow"]{
+        right: -100px;
+    }
+}
+
+@media screen and (max-width: 803px) {
+    .right-main p{
+        margin-right: 10px;
+    }
+    img[alt="mainImage"]{
+        display: none;
+    }
 }

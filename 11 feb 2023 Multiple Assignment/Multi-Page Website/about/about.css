@@ -96,3 +96,51 @@ main{
     font-weight: 500;
     font-size: 20px;
 }
+
+@media screen and (max-width: 539px){
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul{
+        margin-left: 10px;
+        display: flex;
+    }
+    nav ul li{
+        padding: 10px;
+        margin-right: 10px;
+        font-weight: 500;
+        font-size: 13px;
+
+    }
+
+    nav img{
+        width: 100px;
+    }
+    
+    nav ul li:nth-child(2) a {
+        font-weight: 600;
+        color: #20bc7e;
+    }
+    .achievement{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .card{
+        height: 80px;
+        width: 120px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-hospital{
+        width: 80%;
+        text-align: center;
+    }
+}
