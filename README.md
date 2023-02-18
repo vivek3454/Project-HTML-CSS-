@@ -1,2 +1,2 @@
 # Project-HTML-CSS-
-In this repository I will upload project using HTML and CSS.
+In this repository I will upload project which created using HTML and CSS.
