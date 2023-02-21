@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-section {
+    min-height: 100vh;
+    background-image: url(/images/developer.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.text-container {
+    padding-top: 60px;
+    max-width: 850px;
+    margin: 0 auto;
+    color: white;
+}
+
+.bold-text {
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.black-text{
+    background-color: black;
+    padding: 90px 0;
+}
+
+.black-text h1{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.black-text h1 span{
+    font-size: 100px;
+    font-weight: 500;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.my-work{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 120px;
+    /* margin-bottom: 120px; */
+    flex-wrap: wrap;
+}
+
+.card{
+    max-width: 320px;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+    padding-bottom: 40px;
+    box-shadow: 0px 5px 8px rgba(0,0,0,0.3);
+}
+
+.card-content{
+    padding-top: 30px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-content p{
+    text-align: justify;
+    font-size: 13px;
+}
+
+.personal-info-section{
+    display: flex;
+    color: white;
+    font-size: 14px;
+    margin-top: 90px;
+}
+
+.large{
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.para{
+    margin-bottom: 10px;
+}
+
+.contact-me-section{
+    max-width: 50%;
+    background-color: #515603;
+    padding: 60px 50px 80px 80px;
+}
+
+.about-me-section{
+    max-width: 50%;
+    background-color: #722300;
+    padding: 60px 80px 80px 60px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width:930px) {
+    .contact-me-section{
+        padding: 60px 30px 80px 60px;
+    }
+    
+    .about-me-section{
+        padding: 60px 50px 80px 40px;
+    } 
+}
+@media screen and (max-width:768px) {
+    .text-container {
+        
+    }
+}
+
+@media screen and (max-width:426px) {
+    .personal-info-section{
+        flex-direction: column;
+    }
+    .contact-me-section{
+        max-width: 100%;
+    }
+    
+    .about-me-section{
+        max-width: 100%;
+    } 
+}
+
+@media screen and (max-width:376px) {
+    .bold-text {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:321px) {
+    .text-container h2{
+        font-size: 19px;
+    }
+
+    .bold-text {
+        font-size: 55px;
+    }
+    .black-text h1{
+        font-size: 50px;
+    }
+}
