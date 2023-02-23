@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+body{
+    display: flex;
+}
+
+header{
+    height: 100vh;
+    border: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+}
+
+nav h1{
+    font-size: 25px;
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+nav ul li{
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+nav ul li:hover{
+    background-color: #ccc;
+    transition: 0.3s ease-in-out;
+}
+
+main{
+    padding: 50px;
+    max-width: 1200px;
+}
+
+section{
+    margin-bottom: 50px;
+}
+
+section h1{
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 14px;
+}
+
+article ul{
+    margin-left: 30px;
+}
+
+article ul li{
+    margin-bottom: 10px;
+}
+
+code{
+    padding-left: 15px;
+    padding-bottom: 20px;
+    white-space: pre-line;
+    line-height: 1.8;
+    font-weight: 600;
+    background-color: #f7f7f7;
+}
+
+
+@media screen and (max-width:426px) {
+    body{
+    flex-direction: column;
+    }
+
+    header{
+        height: 170px;
+        overflow: hidden;
+        overflow-y: scroll;
+        background: white;
+    }
+    
+    main{
+        padding: 20px;
+    }
+    
+    section {
+        scroll-margin: 200px;
+    }
+
+    article{
+        font-size: 12px;
+        line-height: 1.6;
+    }
+}
