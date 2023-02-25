@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+section{
+    scroll-margin: 70px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header {
+    background: #0090c0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+   
+}
+
+nav h1 {
+    font-size: 4rem;
+    color: white;
+    padding: 1.2rem 0rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover {
+    transition: 0.4s;
+    transform: scale(1.2);
+}
+
+nav ul li:hover a{
+    color: aqua;
+    transition: .2s;
+}
+
+#hero {
+    background: #0a77bb;
+    padding: 8rem 1rem;
+}
+
+#hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-img{
+    /* width: 40%; */
+}
+
+.hero-img img{
+    width: 400px;
+    height: 500px;
+    border-radius: 20%;
+}
+
+#hero h1 {
+    color: white;
+    line-height: 1.1;
+}
+
+#hero h2 {
+    color: white;
+    font-size: 5rem;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    /* Adjust as needed */
+    animation: typing 5s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+#hero .text-color {
+    font-size: 7rem;
+    color: #FDFF9E;
+}
+
+#hero .font-size {
+    font-size: 7rem;
+}
+
+hr {
+    height: 7px;
+    border: none;
+    background: #00668F;
+}
+
+#projects {
+    background: #006caf;
+    padding-bottom: 8rem;
+
+}
+
+#projects h1 {
+    text-align: center;
+    font-size: 7.4rem;
+    color: white;
+    padding: 5rem 0;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    place-items: center;
+}
+
+.card {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+    color: black;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: .6s ease-in-out;
+}
+
+.card:hover .card-content {
+    background: white;
+    transform: translateY(0px);
+}
+
+.card:hover img{
+    opacity: 0.8;
+    transition: 0.4s ease-in-out;
+}
+
+.card-content {
+    position: relative;
+    top: -6rem;
+    margin-bottom: -6rem;
+    padding: 2rem;
+    transform: translateY(100px);
+    transition: 0.6s ease-in-out;
+
+}
+
+.card-content h3 {
+    text-align: center;
+}
+
+#contact{
+    background: #00588f;
+    /* background: black; */
+}
+
+#contact .container{
+    color: white;
+    padding: 6rem 2rem;
+}
+
+#contact h1{
+    font-size: 6.5rem;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.contact-top{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 4rem;
+    place-items: center;
+}
+
+.contact-content{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+.contact-content:hover {
+    color: rgb(180, 180, 180);
+    transition: .2s;
+}
+
+.contact-content h3{
+    font-size: 2.4rem;
+}
+
+.contact-content i{
+    font-size: 2.7rem;
+}
+
+footer{
+    background: #004874;
+    padding: 3rem 2rem;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.3rem;
+}
+
+@media screen and (max-width:768px) {
+    #hero .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width:426px) {
+    html{
+        font-size: 40%;
+    }
+}
+
+@media screen and (max-width:376px) {
+    html{
+        font-size: 30%;
+    }
+    .hero-img img{
+        width: 300px;
+    }
+    .project-container {
+        gap: 10rem;
+    }
+}
