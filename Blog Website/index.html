@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <div id="preloader"></div>
     <header>
         <nav>
             <h1>GreatZone</h1>
@@ -49,7 +50,8 @@
             <div class="card-content">
                 <h1>long established</h1>
                 <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that....
                 </p>
                 <div class="status">
                     <p>May 20th 2020</p>
@@ -64,7 +66,8 @@
                 <div class="card-content">
                     <h2>long established</h2>
                     <p>
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....
+                        It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem Ipsum is that....
                     </p>
                     <div class="status">
                         <p>May 20th 2020</p>
@@ -77,7 +80,8 @@
                 <div class="card-content">
                     <h2>long established</h2>
                     <p>
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....
+                        It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem Ipsum is that....
                     </p>
                     <div class="status">
                         <p>May 20th 2020</p>
@@ -90,7 +94,8 @@
                 <div class="card-content">
                     <h2>long established</h2>
                     <p>
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....
+                        It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem Ipsum is that....
                     </p>
                     <div class="status">
                         <p>May 20th 2020</p>
@@ -104,7 +109,8 @@
             <div class="card-content">
                 <h1>What is Lorem Ipsum?</h1>
                 <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that....
                 </p>
                 <div class="status">
                     <p>May 20th 2020</p>
@@ -114,7 +120,7 @@
             <img src="/images/long-big-card.png" alt="long-card-img">
         </div>
         <div class="bottom">
-        <button class="btn-group btn-bottom">See more</button>
+            <button class="btn-group btn-bottom">See more</button>
         </div>
 
     </main>
@@ -127,6 +133,20 @@
             <i class="fa-brands fa-linkedin"></i>
         </div>
     </footer>
+
+    <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/-gX-vQXknkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+    <script>
+        // preloader
+
+        var preloader = document.getElementById("preloader")
+        window.addEventListener("load", () => {
+            preloader.style.display = "none";
+        })
+
+    </script>
+
 </body>
 
 </html>

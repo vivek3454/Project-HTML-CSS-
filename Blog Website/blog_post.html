@@ -18,6 +18,7 @@
 
 <body>
     <!-- <h1>Hello</h1> -->
+    <div id="preloader"></div>
     <header>
         <nav>
             <h1>GreatZone</h1>
@@ -137,6 +138,19 @@
             <i class="fa-brands fa-linkedin"></i>
         </div>
     </footer>
+    <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/-gX-vQXknkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+    <script>
+        // preloader
+
+        var preloader = document.getElementById("preloader")
+        window.addEventListener("load", () => {
+            preloader.style.display = "none";
+        })
+
+    </script>
+
 </body>
 
 </html>
